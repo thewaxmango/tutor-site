@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>placeholder</title>
+        <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.3/zephyr/bootstrap.min.css" integrity="sha512-dcTg+pv6j02FTyko5ua8nsnARs/l4u43vmnbeVgkFWB5wdLgfUq4CEotFWOlTE4XK7FfVriWj7BrpqET/a+SJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <link rel="stylesheet" href="./static/styles.css">
+    </head> 
+    
+    <body style="font-family: 'Lexend', sans-serif; font-weight: 400">
+        <header class="navbar navbar-expand navbar-light border-bottom user-select-none position-fixed w-100 bg-white" style="z-index: 1; opacity: 90%">
+            <div class="container-fluid" style="width: 95%">
+                <a href="./index.html" class="navbar-brand nav-link typewrite" data-period="1500" data-type='["tutoring", "jumpstart", "easy", "optimal"]'>
+                    >>>&nbsp;&nbsp;<span class="wrap"></span>
+                </a>
+                
+                <ul class="navbar-nav">
+                    <li class="nav-item d-none d-md-block">
+                        <a href="./index.html" class="nav-link text-dark">• home</a>
+                    </li>
+
+                    <li class="nav-item d-none d-md-block">
+                        <a href="./courses.html" class="nav-link text-dark">• courses</a>
+                    </li>
+
+                    <li class="nav-item d-none d-md-block active">
+                        <a href="./tutoring.html" class="nav-link text-dark active">• tutoring</a>
+                    </li>
+
+                    <li class="nav-item d-none d-md-block">
+                    <a href="./about.html" class="nav-link text-dark">• about</a>
+                    </li>
+
+                    <li class="nav-item" onclick="document.querySelector('html').classList.toggle('dark'); manageTheme()">
+                        <i class="bi-moon nav-link"></i>
+                    </li>
+                    
+                    <li class="nav-item dropdown d-block d-md-none">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="h6 bi-list no-margin"></i>
+                        </a>
+
+                        <ul class="dropdown-menu" style="transform: translateX(-50%)">
+                            <li><a href="./index.html" class="dropdown-item text-dark">• home</a></li>
+                            <li><a href="./courses.html" class="dropdown-item text-dark">• courses</a></li>
+                            <li><a href="./tutoring.html" class="dropdown-item text-dark">• tutoring</a></li>
+                            <li><a href="./about.html" class="dropdown-item text-dark">• about</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script src="./static/index.js"></script>
+    </body>
+</html>

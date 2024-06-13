@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400");
+
+.dark {
+    filter: invert(95%) hue-rotate(180deg);
+}
+
+.dark .badge {
+    filter: invert(90%) hue-rotate(180deg);
+}
+
+.dark img {
+    filter: invert(95%) hue-rotate(180deg);
+}
+
+html.dark td[style="color: #99EBFF"],
+html.dark td[style="color: #FFD700"],
+html.dark td[style="color: #E3E3E3"],
+html.dark td[style="color: #252525"] {
+    filter: invert(95%) hue-rotate(180deg);
+}
+
+.card#elo > .card-body > table > tbody > tr > th {
+    width: 33.33%;
+}
+
+.card#runs > .card-body > table > tbody > tr > th {
+    width: 25%;
+}
+
+ul.d-flex {
+    padding: 0;
+}
+
+.link {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+td {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.markdown-body {
+    padding: 15px;
+    font-family: "Lexend", sans-serif;
+}
+.markdown-body p, .markdown-body li, .markdown-body a, .markdown-body code, .markdown-body td, .markdown-body blockquote {
+    font-weight: 300;
+}
+.markdown-body a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+.markdown-body h1, .markdown-body h2 {
+    border-bottom: #d3d3d3 1px solid;
+    padding-bottom: 5px;
+    width: 100%;
+}
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6,
+.markdown-body strong, .markdown-body b, .markdown-body th {
+    font-weight: 400;
+}
+.markdown-body h1 {
+    font-size: 30px;
+}
+.markdown-body h2 {
+    font-size: 24px;
+}
+.markdown-body li {
+    margin: 5px 0;
+}
+.markdown-body ul, .markdown-body ol {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.markdown-body blockquote {
+    border-left: #d3d3d3 8px solid;
+    padding-left: 10px;
+}
+.markdown-body pre {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+.markdown-body code {
+overflow-x: auto;
+}
+.markdown-body table {
+    width: 75%;
+    border: 1px solid #d3d3d3;
+    border-collapse: collapse;
+}
+.markdown-body th, .markdown-body td {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #d3d3d3;
+}
+.markdown-body kbd {
+    background-color: #f5f5f5;
+    padding: 3px;
+    border-radius: 5px;
+}
