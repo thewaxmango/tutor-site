@@ -33,7 +33,11 @@
                     </li>
 
                     <li class="nav-item d-none d-md-block">
-                    <a href="./about.html" class="nav-link text-dark">• about</a>
+                        <a href="./about.html" class="nav-link text-dark">• about</a>
+                    </li>
+
+                    <li class="nav-item d-none d-md-block">
+                        <a href="./contact.html" class="nav-link text-dark">• contact</a>
                     </li>
 
                     <li class="nav-item" onclick="document.querySelector('html').classList.toggle('dark'); manageTheme()">
@@ -50,6 +54,7 @@
                             <li><a href="./courses.html" class="dropdown-item text-dark">• courses</a></li>
                             <li><a href="./tutoring.html" class="dropdown-item text-dark">• tutoring</a></li>
                             <li><a href="./about.html" class="dropdown-item text-dark">• about</a></li>
+                            <li><a href="./contact.html" class="dropdown-item text-dark">• about</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -66,15 +71,17 @@
                 </div>
             </div>
 
-            <div class="container my-4">
+            <div class="container my-4 text-end">
                 <h4>
-                    <a class="link-style-2-blue" href="./about.html" style="text-decoration: none; color: inherit;">>>> who we are</a>
+                    <a class="link-style-2-blue link-style-2-reverse" href="./about.html" style="text-decoration: none; color: inherit;">
+                        who we are <<<
+                    </a>
                 </h4>
                 <p>
                     content
                 </p>           
             </div>
-
+            <br>
             <div class="container my-4">
                 <h4>
                     <a class="link-style-2-red" href="./courses.html" style="text-decoration: none; color: inherit;">
@@ -159,24 +166,85 @@
                 </div>                
             </div>
 
-            <div class="container my-4">
+            <br>
+
+            <div class="container my-4 text-end">
                 <div class="row">
+                    <div class="col-6">
+                        <div class="card user-select-none" style="min-width: 100%; overflow:hidden">
+                            <img class="card-img" src="https://media.discordapp.net/attachments/1219373250312929370/1250581154751316008/Screenshot_20240612-184222.png?ex=666b75f5&is=666a2475&hm=6338b19cd2044a7782eefa7c0f2af2b0c9ef2fdd47985891ddf8991ea2121f47&=&format=webp&quality=lossless&width=1326&height=978" alt="lecture-image">
+                        </div>
+                    </div>
                     <div class="col">
                         <h4>
-                            <a class="link-style-2-green" href="./tutoring.html" style="text-decoration: none; color: inherit;">>>> tutoring</a>
+                            <a class="link-style-2-green link-style-2-reverse" href="./tutoring.html" style="text-decoration: none; color: inherit;">
+                                tutoring <<<
+                            </a>
                         </h4>
                         <p>
-                            content
+                            We offer tutoring services available upon request.
+                            <a class="link-style-1-purple" href="./contact.html" style="text-decoration: none;">Contact us</a> 
+                            if interested.
                         </p>
-                    </div>
-                    <div class="col-4">
-                        <div class="card user-select-none" style="min-width: 100%">
-                            <img class="card-img" src="https://media.discordapp.net/attachments/1219373250312929370/1250581154751316008/Screenshot_20240612-184222.png?ex=666b75f5&is=666a2475&hm=6338b19cd2044a7782eefa7c0f2af2b0c9ef2fdd47985891ddf8991ea2121f47&=&format=webp&quality=lossless&width=1326&height=978" alt="lecture-image">
+                        <div class="row text-start">
+                            <div class="col-lg-12">
+                                <div class="bs-component">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                    <i class="h5 my-2 mx-2 bi-person"></i>one-on-one lessons
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+                                                <div class="accordion-body">
+                                                    <strong>bold</strong> 
+                                                    content 
+                                                    <code>code</code>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    <i class="h5 my-2 mx-2 bi-people"></i>small-group lessons
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style="">
+                                                <div class="accordion-body">
+                                                    <strong>bold</strong> 
+                                                    content 
+                                                    <code>code</code>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    <i class="h5 my-2 mx-2 bi-journal-bookmark"></i>subject material
+                                                </button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <strong>bold</strong> 
+                                                    content 
+                                                    <code>code</code>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
                         </div>
                     </div>
                 </div>
             </div>
-
+            <br>
             <div class="container my-4">
                 <h4>
                     <a class="link-style-2-purple" href="./tutoring.html" style="text-decoration: none; color: inherit;">>>> contact us</a>
@@ -218,7 +286,7 @@
                 </li>
               </ul>
             </footer>
-          </div>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
         <script src="./static/index.js"></script>
     </body>

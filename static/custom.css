@@ -16,6 +16,25 @@
     object-fit: cover;
 }
 
+.link-style-1-red, .link-style-1-blue, .link-style-1-green, .link-style-1-purple {
+	padding: 0 .25rem;
+	margin: 0 -.25rem;
+  	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  	
+	&:hover {
+    	color: white;
+  	}
+}
+
+.link-style-1-purple {
+  	box-shadow: inset 0 0 0 0 #c074ff;
+	color: #c074ff;
+  	
+	&:hover {
+    	box-shadow: inset 100px 0 0 0 #c074ff;
+  	}
+}
+
 .link-style-2-red, .link-style-2-blue, .link-style-2-green, .link-style-2-purple {
 	position: relative;
 	transition: color .3s ease-in-out;
@@ -74,6 +93,16 @@
 
     &:hover {
 		color: #c074ff !important;
+	}
+}
+
+.link-style-2-reverse {
+    &::before {
+        transform-origin: left;
+	}
+
+    &:hover::before {
+        transform-origin: right;
 	}
 }
 
