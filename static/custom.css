@@ -2,8 +2,17 @@
     background-image: linear-gradient(180deg, rgba(255,255,255,0), rgba(255,255,255,1)), url("./assets/title-bg.jpg");
     background-position: center;
     background-size: auto;
-    padding-bottom: 6rem;
-    margin-bottom: -6rem;
+    padding-bottom: 7.5rem;
+    margin-bottom: -5.5rem;
+	border: none !important;
+}
+
+#home-top p {
+	text-shadow: 0.02em 0.01em 0.06em rgb(64, 64, 64);
+}
+
+#home-top h1 {
+	text-shadow: 0.02em 0.02em 0.03em rgb(64, 64, 64);
 }
 
 .card {
@@ -38,7 +47,8 @@
 .link-style-2-red, .link-style-2-blue, .link-style-2-green, .link-style-2-purple {
 	position: relative;
 	transition: color .3s ease-in-out;
-	
+	text-shadow: 0.02em 0.02em 0.07em rgb(128, 128, 128);
+
 	&::before {
 		content: '';
 		position: absolute;
@@ -63,6 +73,7 @@
 
     &:hover {
 		color: #ff7393 !important;
+		text-shadow: 0.02em 0.02em 0.07em #a1596a !important;
 	}
 }
 
@@ -73,6 +84,7 @@
 
     &:hover {
 		color: #739bff !important;
+		text-shadow: 0.02em 0.02em 0.07em #556ba3 !important;
 	}
 }
 
@@ -83,6 +95,7 @@
 
     &:hover {
 		color: #55e061 !important;
+		text-shadow: 0.02em 0.02em 0.07em #3e8844 !important;
 	}
 }
 
@@ -93,6 +106,7 @@
 
     &:hover {
 		color: #c074ff !important;
+		text-shadow: 0.02em 0.02em 0.07em #7c4f9e !important;
 	}
 }
 
@@ -108,4 +122,29 @@
 
 .nav-link {
     transition-duration: 2s;
+}
+
+.nav-tabs .active {
+	background-color: transparent !important;
+}
+
+.nav-tabs .nav-link:not(.active) {
+	transition: color 0.2s ease-in-out;
+}
+
+.hover-purple:hover:not(.active) {
+	color: #c074ff;
+}	
+
+.hover-blue:hover:not(.active) {
+	color: #739bff;
+}	
+
+.subhead-shadow {
+	text-shadow: 0.02em 0.02em 0.07em rgb(128, 128, 128);
+}
+
+.badge-hover:hover {
+	transition: transform 0.3s ease;
+	transform: scale(1.08);
 }
