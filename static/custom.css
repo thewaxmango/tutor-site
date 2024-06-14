@@ -28,7 +28,7 @@
 .link-style-1-red, .link-style-1-blue, .link-style-1-green, .link-style-1-purple {
 	padding: 0 .25rem;
 	margin: 0 -.25rem;
-  	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  	transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
   	
 	&:hover {
     	color: white;
@@ -40,8 +40,35 @@
 	color: #c074ff;
   	
 	&:hover {
-    	box-shadow: inset 100px 0 0 0 #c074ff;
+    	box-shadow: inset 200px 0 0 0 #c074ff;
   	}
+}
+
+.link-style-1-red {
+	box-shadow: inset 0 0 0 0 #ff7393;
+  	color: #ff7393;
+	
+  	&:hover {
+	  box-shadow: inset 200px 0 0 0 #ff7393;
+	}
+}
+
+.link-style-1-green {
+	box-shadow: inset 0 0 0 0 #55e061;
+  	color: #55e061;
+	
+  	&:hover {
+	  box-shadow: inset 200px 0 0 0 #55e061;
+	}
+}
+
+.link-style-1-blue {
+	box-shadow: inset 0 0 0 0 #739bff;
+  	color: #739bff;
+	
+  	&:hover {
+	  box-shadow: inset 200px 0 0 0 #739bff;
+	}
 }
 
 .link-style-2-red, .link-style-2-blue, .link-style-2-green, .link-style-2-purple {
@@ -147,4 +174,8 @@
 .badge-hover:hover {
 	transition: transform 0.3s ease;
 	transform: scale(1.08);
+}
+
+.carousel-item {
+	transition: transform 1s ease;
 }
