@@ -5,19 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>placeholder</title>
         <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.3/zephyr/bootstrap.min.css" integrity="sha512-dcTg+pv6j02FTyko5ua8nsnARs/l4u43vmnbeVgkFWB5wdLgfUq4CEotFWOlTE4XK7FfVriWj7BrpqET/a+SJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
         <link rel="stylesheet" href="./static/styles.css">
+        <link rel="stylesheet" href="./static/custom.css">
     </head> 
     
-    <body style="font-family: 'Lexend', sans-serif; font-weight: 400">
-        <header class="navbar navbar-expand navbar-light border-bottom user-select-none position-fixed w-100 bg-white" style="z-index: 1; opacity: 90%">
+    <body style="font-family: 'Lexend', sans-serif; font-weight: 400;">
+        <header id="header" class="navbar navbar-expand navbar-light border-bottom user-select-none position-fixed w-100 bg-white" style="z-index: 1; opacity: 90%">
             <div class="container-fluid" style="width: 95%">
-                <a href="./index.html" class="navbar-brand nav-link typewrite" data-period="1500" data-type='["tutoring", "jumpstart", "easy", "optimal"]'>
+                <a href="./index.html" class="navbar-brand nav-link typewrite" data-period="1500" data-type='["tutoring", "jumpstart", "acceleration", "engaging"]'>
                     >>>&nbsp;&nbsp;<span class="wrap"></span>
                 </a>
-                
                 <ul class="navbar-nav">
                     <li class="nav-item d-none d-md-block">
                         <a href="./index.html" class="nav-link text-dark">• home</a>
@@ -31,8 +31,12 @@
                         <a href="./tutoring.html" class="nav-link text-dark">• tutoring</a>
                     </li>
 
+                    <li class="nav-item d-none d-md-block">
+                        <a href="./about.html" class="nav-link text-dark">• about</a>
+                    </li>
+
                     <li class="nav-item d-none d-md-block active">
-                    <a href="./about.html" class="nav-link text-dark active">• about</a>
+                        <a href="./contact.html" class="nav-link text-dark active">• contact</a>
                     </li>
 
                     <li class="nav-item" onclick="document.querySelector('html').classList.toggle('dark'); manageTheme()">
@@ -41,7 +45,7 @@
                     
                     <li class="nav-item dropdown d-block d-md-none">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <i class="h6 bi-list no-margin"></i>
+                            <i class="h6 bi-list m-0"></i>
                         </a>
 
                         <ul class="dropdown-menu" style="transform: translateX(-50%)">
@@ -49,13 +53,74 @@
                             <li><a href="./courses.html" class="dropdown-item text-dark">• courses</a></li>
                             <li><a href="./tutoring.html" class="dropdown-item text-dark">• tutoring</a></li>
                             <li><a href="./about.html" class="dropdown-item text-dark">• about</a></li>
+                            <li><a href="./contact.html" class="dropdown-item text-dark">• about</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </header>
         
+        <div class="container-fluid">
+            <div id="home-top" class="row">
+                <div class="jumbotron jumbotron-fluid" style="margin-top: 7rem">
+                    <div class="container">
+                        <h1 class="display-6" style="margin-bottom: 0.5rem;">contact us</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <p>
+                    <b>Email:</b> daniel@daniel.daniel<br>
+                    <b>Phone:</b> (daniel)daniel-daniel<br>
+                    <b>Hours:</b> daniel - daniel<br><br>
+
+                    To sign up for a class, fill out 
+                    <a class="link-style-1-red" href="./about.html" style="text-decoration: none;">this form</a>.
+                    <br>
+                    For individual instructors' contacts, see our 
+                    <a class="link-style-1-blue" href="./about.html" style="text-decoration: none;">about page</a>
+                    for details.
+                </p>
+            </div>
+        </div>
+
+        <div id="footer" class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                <a href="https://github.com/thewaxmango/tutor-site" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <i class="h4 m-0 bi-github"></i>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">site by Max Wang, a <i>placeholder</i> instructor</span>
+                </div>
+            
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3" style="display:none">
+                    <a class="text-body-secondary" href="#">
+                        <i class="h4 m-0 bi-discord"></i>
+                    </a>
+                </li>
+                <li class="ms-3" style="display:none">
+                    <a class="text-body-secondary" href="#">
+                        <i class="h4 m-0 bi-facebook"></i>
+                    </a>
+                </li>
+                <li class="ms-3" style="display:none">
+                    <a class="text-body-secondary" href="#">
+                        <i class="h4 m-0 bi-youtube"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-body-secondary" href="#">
+                        <i class="h4 m-0 bi-chevron-double-up"></i>
+                    </a>
+                </li>
+                </ul>
+            </footer>
+        </div>        
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="./static/index.js"></script>
     </body>
 </html>
