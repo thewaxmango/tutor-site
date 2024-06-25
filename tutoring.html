@@ -1,435 +1,446 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>TuTuring: Tutors</title>
-        <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.3/zephyr/bootstrap.min.css" integrity="sha512-dcTg+pv6j02FTyko5ua8nsnARs/l4u43vmnbeVgkFWB5wdLgfUq4CEotFWOlTE4XK7FfVriWj7BrpqET/a+SJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="./static/styles.css">
-        <link rel="stylesheet" href="./static/custom.css">
-    </head> 
-    
-    <body style="font-family: 'Lexend', sans-serif; font-weight: 400">
-        <header id="header" class="navbar navbar-expand navbar-light border-bottom user-select-none position-fixed w-100 bg-white" style="z-index: 1; opacity: 90%">
-            <div class="container-fluid" style="width: 95%">
-                <a href="./index.html" class="navbar-brand nav-link typewrite" data-period="1500" data-type='["tutoring", "jumpstart", "acceleration", "engaging"]'>
-                    >>>&nbsp;&nbsp;<span class="wrap"></span>
-                </a>
-                <ul class="navbar-nav">
-                    <li class="nav-item d-none d-md-block">
-                        <a href="./index.html" class="nav-link text-dark">• home</a>
-                    </li>
-
-                    <li class="nav-item d-none d-md-block">
-                        <a href="./courses.html" class="nav-link text-dark">• courses</a>
-                    </li>
-
-                    <li class="nav-item d-none d-md-block active">
-                        <a href="./tutoring.html" class="nav-link text-dark active">• tutoring</a>
-                    </li>
-
-                    <li class="nav-item d-none d-md-block">
-                        <a href="./about.html" class="nav-link text-dark">• about</a>
-                    </li>
-
-                    <li class="nav-item d-none d-md-block">
-                        <a href="./contact.html" class="nav-link text-dark">• contact</a>
-                    </li>
-
-                    <li class="nav-item" onclick="document.querySelector('html').classList.toggle('dark'); manageTheme()">
-                        <i class="bi-moon nav-link"></i>
-                    </li>
-                    
-                    <li class="nav-item dropdown d-block d-md-none">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <i class="h6 bi-list m-0"></i>
-                        </a>
-
-                        <ul class="dropdown-menu" style="transform: translateX(-50%)">
-                            <li><a href="./index.html" class="dropdown-item text-dark">• home</a></li>
-                            <li><a href="./courses.html" class="dropdown-item text-dark">• courses</a></li>
-                            <li><a href="./tutoring.html" class="dropdown-item text-dark">• tutoring</a></li>
-                            <li><a href="./about.html" class="dropdown-item text-dark">• about</a></li>
-                            <li><a href="./contact.html" class="dropdown-item text-dark">• about</a></li>
-                        </ul>
-                    </li>
-                </ul>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>TuTuring: Tutors</title>
+      <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.3/zephyr/bootstrap.min.css" integrity="sha512-dcTg+pv6j02FTyko5ua8nsnARs/l4u43vmnbeVgkFWB5wdLgfUq4CEotFWOlTE4XK7FfVriWj7BrpqET/a+SJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="./static/styles.css">
+      <link rel="stylesheet" href="./static/custom.css">
+   </head>
+   <body style="font-family: 'Lexend', sans-serif; font-weight: 400">
+      <header id="header" class="navbar navbar-expand navbar-light border-bottom user-select-none position-fixed w-100 bg-white" style="z-index: 1; opacity: 90%">
+         <div class="container-fluid" style="width: 95%">
+            <a href="./index.html" class="navbar-brand nav-link typewrite" data-period="1500" data-type='["tutoring", "jumpstart", "acceleration", "engaging"]'>
+            >>>&nbsp;&nbsp;<span class="wrap"></span>
+            </a>
+            <ul class="navbar-nav">
+               <li class="nav-item d-none d-md-block">
+                  <a href="./index.html" class="nav-link text-dark">• home</a>
+               </li>
+               <li class="nav-item d-none d-md-block">
+                  <a href="./courses.html" class="nav-link text-dark">• courses</a>
+               </li>
+               <li class="nav-item d-none d-md-block active">
+                  <a href="./tutoring.html" class="nav-link text-dark active">• tutoring</a>
+               </li>
+               <li class="nav-item d-none d-md-block">
+                  <a href="./about.html" class="nav-link text-dark">• about</a>
+               </li>
+               <li class="nav-item d-none d-md-block">
+                  <a href="./contact.html" class="nav-link text-dark">• contact</a>
+               </li>
+               <li class="nav-item dropdown d-block d-md-none">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                  <i class="h6 bi-list m-0"></i>
+                  </a>
+                  <ul class="dropdown-menu" style="transform: translateX(-50%)">
+                     <li><a href="./index.html" class="dropdown-item text-dark">• home</a></li>
+                     <li><a href="./courses.html" class="dropdown-item text-dark">• courses</a></li>
+                     <li><a href="./tutoring.html" class="dropdown-item text-dark">• tutoring</a></li>
+                     <li><a href="./about.html" class="dropdown-item text-dark">• about</a></li>
+                     <li><a href="./contact.html" class="dropdown-item text-dark">• about</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </header>
+      <div class="container-fluid">
+         <div id="home-top" class="row">
+            <div class="jumbotron jumbotron-fluid" style="margin-top: 7rem">
+               <div class="container">
+                  <h1 class="display-6" style="margin-bottom: 0.5rem;">tutoring</h1>
+                  <p class="lead fs-6">Our knowledgable instructors can tutor everything from chemistry to electronics!</p>
+               </div>
             </div>
-        </header>
-        
-        <div class="container-fluid">
-            <div id="home-top" class="row">
-                <div class="jumbotron jumbotron-fluid" style="margin-top: 7rem">
-                    <div class="container">
-                        <h1 class="display-6" style="margin-bottom: 0.5rem;">tutoring</h1>
-                        <p class="lead fs-6">Our knowledgable instructors can tutor everything from chemistry to electronics!</p>
-                    </div>
-                </div>
+         </div>
+         <div class="container">
+            <div class="card mw-100" style="overflow: hidden; min-height: 15rem;">
+               <div id="tutor-carousel" class="mw-100 carousel slide mb-6" data-bs-ride="carousel" style="min-height: 15rem;">
+                  <div class="carousel-indicators" style="margin-bottom: 0.7rem;">
+                     <button type="button" data-bs-target="#tutor-carousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+                     <button type="button" data-bs-target="#tutor-carousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                     <button type="button" data-bs-target="#tutor-carousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+                     <button type="button" data-bs-target="#tutor-carousel" data-bs-slide-to="3" aria-label="Slide 4" class=""></button>
+                     <button type="button" data-bs-target="#tutor-carousel" data-bs-slide-to="4" aria-label="Slide 5" class=""></button>
+                     <button type="button" data-bs-target="#tutor-carousel" data-bs-slide-to="5" aria-label="Slide 6" class=""></button>
+                  </div>
+                  <div class="carousel-inner" style="height: 15rem">
+                     <div class="carousel-item h-100 active">
+                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                           <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                        </svg>
+                        <div class="container">
+                           <div class="carousel-caption text-start">
+                              <h1>Testimonial</h1>
+                              <p class="opacity-75">Max is so orz</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item h-100">
+                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                           <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                        </svg>
+                        <div class="container">
+                           <div class="carousel-caption">
+                              <h1>Testimonial</h1>
+                              <p class="opacity-75">Daniel is so orz</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item h-100">
+                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                           <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                        </svg>
+                        <div class="container">
+                           <div class="carousel-caption text-end">
+                              <h1>Testimonial</h1>
+                              <p class="opacity-75">Munir is so orz</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item h-100">
+                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                           <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                        </svg>
+                        <div class="container">
+                           <div class="carousel-caption text-end">
+                              <h1>Testimonial</h1>
+                              <p class="opacity-75">Daniel is so cute</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item h-100">
+                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                           <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                        </svg>
+                        <div class="container">
+                           <div class="carousel-caption">
+                              <h1>Testimonial</h1>
+                              <p class="opacity-75">Munir is so orz</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item h-100">
+                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                           <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                        </svg>
+                        <div class="container">
+                           <div class="carousel-caption text-end">
+                              <h1>Testimonial</h1>
+                              <p class="opacity-75">Max is so cute</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#tutor-carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#tutor-carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                  </button>
+               </div>
             </div>
-
-            <div class="container">
-                <div class="card mw-100" style="overflow: hidden; min-height: 15rem;">
-                    <div id="tutor-carousel" class="mw-100 carousel slide mb-6" data-bs-ride="carousel" style="min-height: 15rem;">
-                        <div class="carousel-indicators" style="margin-bottom: 0.7rem;">
-                            <button type="button" data-bs-target="#tutor-carousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
-                            <button type="button" data-bs-target="#tutor-carousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-                            <button type="button" data-bs-target="#tutor-carousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-                            <button type="button" data-bs-target="#tutor-carousel" data-bs-slide-to="3" aria-label="Slide 4" class=""></button>
-                            <button type="button" data-bs-target="#tutor-carousel" data-bs-slide-to="4" aria-label="Slide 5" class=""></button>
-                            <button type="button" data-bs-target="#tutor-carousel" data-bs-slide-to="5" aria-label="Slide 6" class=""></button>
+         </div>
+         <div class="container my-4">
+            <div class="row">
+               <div class="col" style="min-width: 15em;">
+                  <div class="row">
+                     <h4 class="subhead-shadow my-0" style="max-width: fit-content;">>>> info</h4>
+                     <a class="my-auto px-0" href="./contact.html" style="max-width: fit-content;">
+                     <span class="badge badge-hover" style="background-color:#c074ff">Register Here</span>
+                     </a>
+                  </div>
+                  <div class="row my-3">
+                     <p>
+                        Our tutors are academic leaders from TJHSST, 
+                        taking the most advanced classes and leading/lecturing for some of the prestigious competition clubs.
+                     </p>
+                     <p>
+                        We have extensive experience teaching content anywhere from beginner to advanced levels
+                        through our clubs and tutoring both in and out of school.
+                     </p>
+                     <p>
+                        <a class="link-style-1-red" href="./about.html" style="text-decoration: none;">Learn more</a>
+                        about our tutors.
+                     </p>
+                  </div>
+                  <div class="col-5" style="min-width: 25em;">
+                     <div id="intro-alg-schedule" class="bs-component">
+                        <table class="table table-striped table-bordered">
+                           <thead class="thead-dark">
+                              <tr>
+                                 <th class="py-2" scope="col">Number of Students</th>
+                                 <th class="py-2" scope="col">Price per Hour</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="table-secondary">
+                                 <th class="py-2" scope="row">1
+                                 <td class="py-2">45$</td>
+                              </tr>
+                              <tr class="table-secondary">
+                                 <th class="py-2" scope="row">2
+                                 <td class="py-2">25$</td>
+                              </tr>
+                              <tr class="table-secondary">
+                                 <th class="py-2" scope="row">3
+                                 <td class="py-2">20$</td>
+                              </tr>
+                              <tr class="table-secondary">
+                                 <th class="py-2" scope="row">4+
+                                 <td class="py-2">15$</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-7"  style="min-width: 20em;">
+                  <h4 class="subhead-shadow my-0" style="max-width: fit-content;">>>> subjects available</h4>
+                  <div class="accordion my-3" id="tutoring-accordion">
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                           <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                           <i class="h5 my-2 mx-2 bi-plus-slash-minus"></i><b>mathematics</b>
+                           </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#tutoring-accordion" style="">
+                           <table class="table table-striped table-bordered my-0">
+                              <thead class="thead-dark">
+                                 <tr>
+                                    <th class="py-2" scope="col">Topic</th>
+                                    <th class="py-2" scope="col" style="width: 40%">Tutors</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr class="table-secondary">
+                                    <th class="py-2" scope="row">Pre-Algebra - AP Calculus AB/BC</th>
+                                    <td class="py-2">all tutors</td>
+                                 </tr>
+                                 <tr class="table-secondary">
+                                    <th class="py-2" scope="row">Multivariable Calculus</th>
+                                    <td class="py-2">Daniel, Max</td>
+                                 </tr>
+                                 <tr class="table-secondary">
+                                    <th class="py-2" scope="row">Linear Algebra</th>
+                                    <td class="py-2">Daniel, Max</td>
+                                 </tr>
+                                 <tr class="table-secondary">
+                                    <th class="py-2" scope="row">Elementary Differential Equations</th>
+                                    <td class="py-2">Johnny, Max</td>
+                                 </tr>
+                                 <tr class="table-secondary">
+                                    <th class="py-2" scope="row">Competitive Math (AMC8/10/12 level)</th>
+                                    <td class="py-2">Daniel, Max <span class="help-tip" data-help-tip="Qualified for AIME and ARML">?</span></td>
+                                 </tr>
+                              </tbody>
+                           </table>
                         </div>
-
-                        <div class="carousel-inner" style="height: 15rem">
-                            <div class="carousel-item h-100 active">
-                                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-                                <div class="container">
-                                    <div class="carousel-caption text-start">
-                                        <h1>Testimonial</h1>
-                                        <p class="opacity-75">Max is so orz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item h-100">
-                                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-                                <div class="container">
-                                    <div class="carousel-caption">
-                                        <h1>Testimonial</h1>
-                                        <p class="opacity-75">Daniel is so orz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item h-100">
-                                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-                                <div class="container">
-                                    <div class="carousel-caption text-end">
-                                        <h1>Testimonial</h1>
-                                        <p class="opacity-75">Munir is so orz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item h-100">
-                                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-                                <div class="container">
-                                    <div class="carousel-caption text-end">
-                                        <h1>Testimonial</h1>
-                                        <p class="opacity-75">Daniel is so cute</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item h-100">
-                                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-                                <div class="container">
-                                    <div class="carousel-caption">
-                                        <h1>Testimonial</h1>
-                                        <p class="opacity-75">Munir is so orz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item h-100">
-                                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-                                <div class="container">
-                                    <div class="carousel-caption text-end">
-                                        <h1>Testimonial</h1>
-                                        <p class="opacity-75">Max is so cute</p>
-                                    </div>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                           <button class="accordion-button collapsed py-2"type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                           <i class="h5 my-2 mx-2 bi-laptop"></i><b>computer science</b>
+                           </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#tutoring-accordion">
+                           <table class="table table-striped table-bordered my-0">
+                              <thead class="thead-dark">
+                                 <tr>
+                                    <th class="py-2" scope="col">Topic</th>
+                                    <th class="py-2" scope="col" style="width: 40%">Tutors</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr class="table-secondary">
+                                    <th class="py-2" scope="row">Intro to Python / Java / C++</th>
+                                    <td class="py-2">all tutors</td>
+                                 </tr>
+                                 <tr class="table-secondary">
+                                    <th class="py-2" scope="row">Web App Development</th>
+                                    <td class="py-2">all tutors</td>
+                                 </tr>
+                                 <tr class="table-secondary">
+                                    <th class="py-2" scope="row">Algorithms & Data Structures</th>
+                                    <td class="py-2">all tutors</td>
+                                 </tr>
+                                 <tr class="table-secondary">
+                                    <th class="py-2" scope="row">Artificial Intelligence</th>
+                                    <td class="py-2">all tutors</td>
+                                 </tr>
+                                 <tr class="table-secondary">
+                                    <th class="py-2" scope="row">Competitive Programming (USACO Bronze-Gold)</th>
+                                    <td class="py-2">all tutors <span class="help-tip" data-help-tip="Tutors are USACO Gold to Platinum level">?</span></td>
+                                 </tr>
+                              </tbody>
+                           </table>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#tutor-carousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#tutor-carousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                           <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                           <i class="h5 my-2 mx-2 bi-lightbulb"></i><b>sciences</b>
+                           </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#tutoring-accordion">
+                           <table class="table table-striped table-bordered my-0">
+                              <thead class="thead-dark">
+                                 <tr>
+                                    <th class="py-2" scope="col">Topic</th>
+                                    <th class="py-2" scope="col" style="width: 40%">Tutors</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr class="table-secondary">
+                                    <th class="py-2" scope="row">AP Chemistry</th>
+                                    <td class="py-2">Max <span class="help-tip" data-help-tip="Tutor scored 5 on the AP exam">?</span></td>
+                                 </tr>
+                                 <tr class="table-secondary">
+                                    <th class="py-2" scope="row">AP Physics C Mechanics</th>
+                                    <td class="py-2">Daniel, Max, Johnny <span class="help-tip" data-help-tip="Tutors scored 5 on the AP exam">?</span></td>
+                                 </tr>
+                                 <tr class="table-secondary">
+                                    <th class="py-2" scope="row">AP Physics C E&M</th>
+                                    <td class="py-2">Daniel, Max, Johnny <span class="help-tip" data-help-tip="Tutors scored 5 on the AP exam">?</span></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                           <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                           <i class="h5 my-2 mx-2 bi-cpu"></i><b>engineering</b>
+                           </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#tutoring-accordion">
+                           <table class="table table-striped table-bordered my-0">
+                              <thead class="thead-dark">
+                                 <tr>
+                                    <th class="py-2" scope="col">Topic</th>
+                                    <th class="py-2" scope="col" style="width: 40%">Tutors</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr class="table-secondary">
+                                    <th class="py-2" scope="row">CAD / Fusion 360</th>
+                                    <td class="py-2">Munir, Max</td>
+                                 </tr>
+                                 <tr class="table-secondary">
+                                    <th class="py-2" scope="row">Analog / Digital Electronics</th>
+                                    <td class="py-2">Max</td>
+                                 </tr>
+                                 <tr class="table-secondary">
+                                    <th class="py-2" scope="row">Arduino</th>
+                                    <td class="py-2">Johnny, Max, Munir</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                           <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                           <i class="h5 my-2 mx-2 bi-journal-bookmark"></i><b>humanities</b>
+                           </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#tutoring-accordion">
+                           <table class="table table-striped table-bordered my-0">
+                              <thead class="thead-dark">
+                                 <tr>
+                                    <th class="py-2" scope="col">Topic</th>
+                                    <th class="py-2" scope="col" style="width: 40%">Tutors</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr class="table-secondary">
+                                    <th class="py-2" scope="row">AP US History</th>
+                                    <td class="py-2">Johnny</td>
+                                 </tr>
+                                 <tr class="table-secondary">
+                                    <th class="py-2" scope="row">AP US Government</th>
+                                    <td class="py-2">Johnny</td>
+                                 </tr>
+                                 <tr class="table-secondary">
+                                    <th class="py-2" scope="row">General Writing</th>
+                                    <td class="py-2">Johnny <span class="help-tip" data-help-tip="Tutor is a TJHSST Writing Center Tutor">?</span></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                           <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                           <i class="h5 my-2 mx-2 bi-pencil-square"></i><b>exam prep</b>
+                           </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#tutoring-accordion">
+                           <table class="table table-striped table-bordered my-0">
+                              <thead class="thead-dark">
+                                 <tr>
+                                    <th class="py-2" scope="col">Topic</th>
+                                    <th class="py-2" scope="col" style="width: 40%">Tutors</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr class="table-secondary">
+                                    <th class="py-2" scope="row">SAT / PSAT</th>
+                                    <td class="py-2">Johnny, Max <span class="help-tip" data-help-tip="Tutors scored 1580 on the SAT">?</span></td>
+                                 </tr>
+                                 <tr class="table-secondary">
+                                    <th class="py-2" scope="row">Cambridge TMUA / STEP</th>
+                                    <td class="py-2">Max <span class="help-tip" data-help-tip="Tutor was accepted by Cambridge University">?</span></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-
-            <div class="container my-4">
-                <div class="row">
-                    <div class="col" style="min-width: 15em;">
-                        <div class="row">
-                            <h4 class="subhead-shadow my-0" style="max-width: fit-content;">>>> info</h4>
-                            <a class="my-auto px-0" href="./contact.html" style="max-width: fit-content;">
-                                <span class="badge badge-hover" style="background-color:#c074ff">Contact Us</span>
-                            </a>
-                        </div>
-                        <div class="row my-3">
-                            <p>
-                                Our tutors are academic leaders from TJHSST, 
-                                taking the most advanced classes and leading/lecturing for some of the prestigious competition clubs.
-                            </p>
-                            <p>
-                                We have extensive experience teaching content anywhere from beginner to advanced levels
-                                through our clubs and tutoring both in and out of school.
-                            </p>
-                            <p>
-                                <a class="link-style-1-red" href="./about.html" style="text-decoration: none;">Learn more</a>
-                                about our tutors or
-                                <a class="link-style-1-purple" href="./contact.html" style="text-decoration: none;">contact us</a> 
-                                if interested.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-7"  style="min-width: 20em;">
-                        <h4 class="subhead-shadow my-0" style="max-width: fit-content;">>>> subjects available</h4>
-                        <div class="accordion my-3" id="tutoring-accordion">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                        <i class="h5 my-2 mx-2 bi-plus-slash-minus"></i><b>mathematics</b>
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#tutoring-accordion" style="">
-                                    <table class="table table-striped table-bordered my-0">
-                                        <thead class="thead-dark">
-                                            <tr>
-                                                <th class="py-2" scope="col">Topic</th>
-                                                <th class="py-2" scope="col" style="width: 40%">Tutors</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="table-secondary">
-                                                <th class="py-2" scope="row">Pre-Algebra - AP Calculus AB/BC</th>
-                                                <td class="py-2">all tutors</td>
-                                            </tr>
-                                            <tr class="table-secondary">
-                                                <th class="py-2" scope="row">Multivariable Calculus</th>
-                                                <td class="py-2">Daniel, Max</td>
-                                            </tr>
-                                            <tr class="table-secondary">
-                                                <th class="py-2" scope="row">Linear Algebra</th>
-                                                <td class="py-2">Daniel, Max</td>
-                                            </tr>
-                                            <tr class="table-secondary">
-                                                <th class="py-2" scope="row">Elementary Differential Equations</th>
-                                                <td class="py-2">Johnny, Max</td>
-                                            </tr>
-                                            <tr class="table-secondary">
-                                                <th class="py-2" scope="row">Competitive Math (AMC8/10/12 level)</th>
-                                                <td class="py-2">Max <span class="help-tip" data-help-tip="[insert qualification]">?</span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed py-2"type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <i class="h5 my-2 mx-2 bi-laptop"></i><b>computer science</b>
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#tutoring-accordion">
-                                    <table class="table table-striped table-bordered my-0">
-                                        <thead class="thead-dark">
-                                            <tr>
-                                                <th class="py-2" scope="col">Topic</th>
-                                                <th class="py-2" scope="col" style="width: 40%">Tutors</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="table-secondary">
-                                                <th class="py-2" scope="row">Intro to Python / Java / C++</th>
-                                                <td class="py-2">all tutors</td>
-                                            </tr>
-                                            <tr class="table-secondary">
-                                                <th class="py-2" scope="row">Web App Development</th>
-                                                <td class="py-2">all tutors</td>
-                                            </tr>
-                                            <tr class="table-secondary">
-                                                <th class="py-2" scope="row">Algorithms & Data Structures</th>
-                                                <td class="py-2">all tutors</td>
-                                            </tr>
-                                            <tr class="table-secondary">
-                                                <th class="py-2" scope="row">Artificial Intelligence</th>
-                                                <td class="py-2">all tutors</td>
-                                            </tr>
-                                            <tr class="table-secondary">
-                                                <th class="py-2" scope="row">Competitive Programming (USACO Bronze-Gold)</th>
-                                                <td class="py-2">all tutors <span class="help-tip" data-help-tip="Tutors are USACO Gold to Platinum level">?</span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        <i class="h5 my-2 mx-2 bi-lightbulb"></i><b>sciences</b>
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#tutoring-accordion">
-                                    <table class="table table-striped table-bordered my-0">
-                                        <thead class="thead-dark">
-                                            <tr>
-                                                <th class="py-2" scope="col">Topic</th>
-                                                <th class="py-2" scope="col" style="width: 40%">Tutors</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="table-secondary">
-                                                <th class="py-2" scope="row">AP Chemistry</th>
-                                                <td class="py-2">Max <span class="help-tip" data-help-tip="Tutor scored 5 on the AP exam">?</span></td>
-                                            </tr>
-                                            <tr class="table-secondary">
-                                                <th class="py-2" scope="row">AP Physics C Mechanics</th>
-                                                <td class="py-2">Daniel, Max, Johnny <span class="help-tip" data-help-tip="Tutors scored 5 on the AP exam">?</span></td>
-                                            </tr>
-                                            <tr class="table-secondary">
-                                                <th class="py-2" scope="row">AP Physics C E&M</th>
-                                                <td class="py-2">Daniel, Max, Johnny <span class="help-tip" data-help-tip="Tutors scored 5 on the AP exam">?</span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingFour">
-                                    <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        <i class="h5 my-2 mx-2 bi-cpu"></i><b>engineering</b>
-                                    </button>
-                                </h2>
-                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#tutoring-accordion">
-                                    <table class="table table-striped table-bordered my-0">
-                                        <thead class="thead-dark">
-                                            <tr>
-                                                <th class="py-2" scope="col">Topic</th>
-                                                <th class="py-2" scope="col" style="width: 40%">Tutors</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="table-secondary">
-                                                <th class="py-2" scope="row">CAD / Fusion 360</th>
-                                                <td class="py-2">Munir, Max</td>
-                                            </tr>
-                                            <tr class="table-secondary">
-                                                <th class="py-2" scope="row">Analog / Digital Electronics</th>
-                                                <td class="py-2">Max</td>
-                                            </tr>
-                                            <tr class="table-secondary">
-                                                <th class="py-2" scope="row">Arduino</th>
-                                                <td class="py-2">Johnny, Max, Munir</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingFive">
-                                    <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                        <i class="h5 my-2 mx-2 bi-journal-bookmark"></i><b>humanities</b>
-                                    </button>
-                                </h2>
-                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#tutoring-accordion">
-                                    <table class="table table-striped table-bordered my-0">
-                                        <thead class="thead-dark">
-                                            <tr>
-                                                <th class="py-2" scope="col">Topic</th>
-                                                <th class="py-2" scope="col" style="width: 40%">Tutors</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="table-secondary">
-                                                <th class="py-2" scope="row">AP US History</th>
-                                                <td class="py-2">Johnny</td>
-                                            </tr>
-                                            <tr class="table-secondary">
-                                                <th class="py-2" scope="row">AP US Government</th>
-                                                <td class="py-2">Johnny</td>
-                                            </tr>
-                                            <tr class="table-secondary">
-                                                <th class="py-2" scope="row">General Writing</th>
-                                                <td class="py-2">Johnny <span class="help-tip" data-help-tip="Tutor is a TJHSST Writing Center Tutor">?</span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingSix">
-                                    <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                        <i class="h5 my-2 mx-2 bi-pencil-square"></i><b>exam prep</b>
-                                    </button>
-                                </h2>
-                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#tutoring-accordion">
-                                    <table class="table table-striped table-bordered my-0">
-                                        <thead class="thead-dark">
-                                            <tr>
-                                                <th class="py-2" scope="col">Topic</th>
-                                                <th class="py-2" scope="col" style="width: 40%">Tutors</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="table-secondary">
-                                                <th class="py-2" scope="row">SAT / PSAT</th>
-                                                <td class="py-2">Johnny, Max <span class="help-tip" data-help-tip="Tutors scored 1580 on the SAT">?</span></td>
-                                            </tr>
-                                            <tr class="table-secondary">
-                                                <th class="py-2" scope="row">Cambridge TMUA / STEP</th>
-                                                <td class="py-2">Max <span class="help-tip" data-help-tip="Tutor was accepted by Cambridge University">?</span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+         </div>
+      </div>
+      <div id="footer" class="container">
+         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+               <a href="https://github.com/thewaxmango/tutor-site" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+               <i class="h4 m-0 bi-github"></i>
+               </a>
+               <span class="mb-3 mb-md-0 text-body-secondary">site by Max Wang, a <i>TuTuring</i> instructor</span>
             </div>
-        </div>
-
-        <div id="footer" class="container">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-              <div class="col-md-4 d-flex align-items-center">
-                <a href="https://github.com/thewaxmango/tutor-site" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                    <i class="h4 m-0 bi-github"></i>
-                </a>
-                <span class="mb-3 mb-md-0 text-body-secondary">site by Max Wang, a <i>TuTuring</i> instructor</span>
-              </div>
-          
-              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3" style="display:none">
-                    <a class="text-body-secondary" href="#">
-                        <i class="h4 m-0 bi-discord"></i>
-                    </a>
-                </li>
-                <li class="ms-3" style="display:none">
-                    <a class="text-body-secondary" href="#">
-                        <i class="h4 m-0 bi-facebook"></i>
-                    </a>
-                </li>
-                <li class="ms-3" style="display:none">
-                    <a class="text-body-secondary" href="#">
-                        <i class="h4 m-0 bi-youtube"></i>
-                    </a>
-                </li>
-                <li class="ms-3">
-                    <a class="text-body-secondary" href="#">
-                        <i class="h4 m-0 bi-chevron-double-up"></i>
-                    </a>
-                </li>
-              </ul>
-            </footer>
-        </div>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-        <script src="./static/index.js"></script>
-    </body>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+               <li class="ms-3" style="display:none">
+                  <a class="text-body-secondary" href="#">
+                  <i class="h4 m-0 bi-discord"></i>
+                  </a>
+               </li>
+               <li class="ms-3" style="display:none">
+                  <a class="text-body-secondary" href="#">
+                  <i class="h4 m-0 bi-facebook"></i>
+                  </a>
+               </li>
+               <li class="ms-3" style="display:none">
+                  <a class="text-body-secondary" href="#">
+                  <i class="h4 m-0 bi-youtube"></i>
+                  </a>
+               </li>
+               <li class="ms-3">
+                  <a class="text-body-secondary" href="#">
+                  <i class="h4 m-0 bi-chevron-double-up"></i>
+                  </a>
+               </li>
+            </ul>
+         </footer>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+      <script src="./static/index.js"></script>
+   </body>
 </html>
