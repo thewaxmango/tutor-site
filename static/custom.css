@@ -180,7 +180,7 @@
 	transition: transform 1s ease;
 }
 
-#bootstrap-overrides .carousel-caption {
+.caption {
     position: absolute;
     right: 15%;
     bottom: 0.5rem;
